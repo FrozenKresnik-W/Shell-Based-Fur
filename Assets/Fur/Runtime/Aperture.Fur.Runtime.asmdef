@@ -1,0 +1,14 @@
+{
+    "name": "Aperture.Fur.Runtime",
+    "rootNamespace": "Aperture.Fur.Runtime",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

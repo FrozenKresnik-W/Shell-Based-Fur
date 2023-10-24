@@ -1,0 +1,14 @@
+{
+    "name": "Aperture.Fur.Shader",
+    "rootNamespace": "Aperture.Fur.Shader",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
