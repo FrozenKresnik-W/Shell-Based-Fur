@@ -101,29 +101,30 @@ Shader "Aperture/InstancingShellBasedFur"
             struct Attributes
             {
                 float4 positionOS   : POSITION;
-                float4 normal   : NORMAL;
-                float4 color   : COLOR;
+                float4 normal       : NORMAL;
+                half4 color         : COLOR;
                 float2 texcoord     : TEXCOORD0;
-                uint instanceID : SV_InstanceID;
+                uint instanceID     : SV_InstanceID;
             };
 
             struct Varyings
             {
-                    float4 positionCS   : SV_POSITION;
-                    float2 uv           : TEXCOORD0;
-                    float3 mixData         : TEXCOORD1;//x=layer  y=Thickness  z=smoothness(exp2)
-                    float3 normalWS     : NORMAL;
-                    float3 positionWS   : TEXCOORD2;
+                    float4 positionCS               : SV_POSITION;
+                    float3 normalWS                 : NORMAL;
+                    float2 uv                       : TEXCOORD0;
+                    float3 mixData                  : TEXCOORD1;//x=layer  y=Thickness  z=smoothness(exp2)
+                    float3 positionWS               : TEXCOORD2;
                 #if defined(REQUIRES_VERTEX_SHADOW_COORD_INTERPOLATOR)
-                    float4 shadowCoord 			: TEXCOORD3;
+                    float4 shadowCoord 			    : TEXCOORD3;
                 #endif
-                half    fogCoord                : TEXCOORD4;
+                half    fogCoord                    : TEXCOORD4;
                 #ifdef _ADDITIONAL_LIGHTS_VERTEX
-                    half4 fogFactorAndVertexLight  : TEXCOORD5; // x: fogFactor, yzw: vertex light
+                    half4 fogFactorAndVertexLight   : TEXCOORD5; // x: fogFactor, yzw: vertex light
                 #else
                     half  fogFactor                 : TEXCOORD6;
                 #endif
             };
+
             Varyings LitPassVertex(Attributes input)
             {
                 Setup();

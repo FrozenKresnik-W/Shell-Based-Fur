@@ -93,7 +93,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
-    - _FurLength: 0.1
+    - _FurLength: 0.5
     - _FurPatterScale: 20
     - _GlossMapScale: 0
     - _Glossiness: 0

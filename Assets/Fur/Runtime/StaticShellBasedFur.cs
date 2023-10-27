@@ -56,17 +56,11 @@ namespace Aperture.Fur.Runtime
             }
         }
 
-        private void LateUpdate()
-        {
-            if (m_Renderer.isVisible)
-            {
-                m_MaterialPropertyBlock.SetMatrix(ShaderProperties.MATRIX_OBJECT_TO_WORLD, m_Renderer.localToWorldMatrix);
-                m_MaterialPropertyBlock.SetMatrix(ShaderProperties.MATRIX_WORLD_TO_OBJECT, m_Renderer.worldToLocalMatrix);
-            }
-        }
-
         private void Render(Camera camera)
         {
+            m_MaterialPropertyBlock.SetMatrix(ShaderProperties.MATRIX_OBJECT_TO_WORLD, m_Renderer.localToWorldMatrix);
+            m_MaterialPropertyBlock.SetMatrix(ShaderProperties.MATRIX_WORLD_TO_OBJECT, m_Renderer.worldToLocalMatrix);
+
             int layerCount = FurLayerBalancer.GetBalancedLayerCount(camera, this);
             if(layerCount > 0)
             {

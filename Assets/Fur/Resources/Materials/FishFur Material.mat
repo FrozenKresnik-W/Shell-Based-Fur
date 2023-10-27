@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CatFur Material
+  m_Name: FishFur Material
   m_Shader: {fileID: 4800000, guid: 8e1ac01683378a74daba74a985674d6e, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -34,7 +34,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 810d849ec17ac3c458c538b9bd6d5470, type: 3}
+        m_Texture: {fileID: 2800000, guid: a54a5425e254145a4bca0f76a8be65db, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -106,7 +106,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
-    - _FurLength: 0.2
+    - _FurLength: 0.5
     - _FurPatterScale: 20
     - _GlossMapScale: 0
     - _Glossiness: 0
