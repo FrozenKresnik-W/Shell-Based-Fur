@@ -35,7 +35,7 @@ namespace Aperture.Fur.Runtime
 
         private void Awake()
         {
-            m_IsSupport = SystemInfo.supportsInstancing && SystemInfo.supportsComputeShaders;
+            m_IsSupport = SystemInfo.supportsInstancing && SystemInfo.supportsComputeShaders && SystemInfo.maxComputeBufferInputsVertex >= 3;
 
             m_Renderer = GetComponent<SkinnedMeshRenderer>();
             m_MaterialPropertyBlock = new MaterialPropertyBlock();
